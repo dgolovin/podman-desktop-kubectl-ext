@@ -22,4 +22,4 @@ LABEL org.opencontainers.image.title="Podman Desktop kubectl" \
         org.opencontainers.image.vendor="Red Hat" \
         io.podman-desktop.api.version=">= 0.0.1"
 
-COPY builtin/kubclt-cli-tool.cdix /extension
+COPY builtin/kubeclt-cli-tool.cdix /extension
