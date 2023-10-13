@@ -8,6 +8,10 @@ export function activate(context: ExtensionContext) {
     displayName: "kubectl",
     images: {
       icon: 'icon.png'
+    },
+    detection: {
+      versionOptions: ['version', '-o json'],
+      versionParser: (stdout: string) => JSON.parse(stdout).clientVersion.gitVersion,
     }
-  })
+  });
 }
