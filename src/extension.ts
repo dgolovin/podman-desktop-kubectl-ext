@@ -10,7 +10,7 @@ export function activate(context: ExtensionContext) {
       icon: 'icon.png'
     },
     detection: {
-      versionOptions: ['version', '-o json'],
+      versionOptions: ['version', '-o', 'json'],
       versionParser: (stdout: string) => JSON.parse(stdout).clientVersion.gitVersion,
     }
   });
